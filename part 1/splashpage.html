@@ -4,6 +4,7 @@
 	Date: 08 February 2026
 	Description: Web page of Indian cricket team. 
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,16 +13,65 @@
 	<style>
 	body {
 		font-family: Arial, sans-serif;
-		margin: 25px;
+		margin: 25px; 
 	}
-	img, video, iframe, audio {
-		max-width: 100%;
-		height: auto:
+	header{
+		text-align: center;
+		background: #f7dfc2;
+		padding: 20px;
+		border-radius: 10px;
+	}
+	p{
+		line height:1.6;
+		max-width:900 px;
+		margin:25px auto;
+		text-align: center;
+	}
+	.Gallery{
+		display:flex;
+		flex-wrap: nowrap;
+		gap:15px;
+		overflow-x:auto;
 	}
 	</style>
 </head>
+
 <body>
 <header>
 	<h1>Welcome to Indian cricket team</h1>
-	<img src="images/poster.jpg" alt="Indian Cricket team winning picture" width="600">
+	<img src="images/poster.jpg" alt="Indian Cricket team winning picture" width="600px">
 </header>
+<p>
+Cricket world is a place for fans who love the excitement, strategy and history of cricket. Explore iconic moments, matches and spirit of the game. 
+</p>
+<section class="Gallery">
+	<img width="500px" height="350px" src="images/1.jpg" alt="three cricketers celebrating">
+	<img width="500px" height="350px" src="images/2.jpg" alt="Womens cricket team">
+	<img width="500px" height="350px" src="images/3.jpg" alt="one cricketer bowing down out of respect">
+	<img width="500px" height="350px" src="images/4.jpg" alt="famous cricketer century pose">
+	<img width="500px" height="350px" src="images/5.jpeg" alt="winning moment">
+</section>
+
+<section>
+	<h2>Winning Celebration</h2>
+	<iframe
+		style="border:0" src="https://www.youtube.com/embed/IY7fj-Tkq6M">
+	</iframe>
+</section>
+
+<section>
+	<h2>My Cricket moment</h2>
+	<video controls width="500px" height="350px" loop>
+		<source src="video/1.mp4" type="video/mp4">
+	</video>
+</section>
+
+<section>
+	<h2>Winning Audio</h2>
+	<audio controls autoplay loop muted controlsList="nodownload">
+		<source src="audio/1.mp3" type="audio/mpeg">
+	</audio>
+</body>
+</html>
+
+	
